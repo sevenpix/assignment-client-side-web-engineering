@@ -1,13 +1,7 @@
-# 03-yield
-
-## Setup
-
-```bash
-npm install
-```
+# 01-fp
 
 ## Dev
 
-```bash
+```
 npm test
 ```
