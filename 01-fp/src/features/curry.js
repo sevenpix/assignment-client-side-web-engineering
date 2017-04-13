@@ -16,8 +16,15 @@ const multiply = (valueOne) => {
   }
 }
 
+const divide = (valueOne) => {
+  return (valueTwo) => {
+    return valueOne / valueTwo
+  }
+}
+
 export {
   addUp,
   subtract,
-  multiply
+  multiply,
+  divide
 };

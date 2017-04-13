@@ -12,4 +12,8 @@ export default function() {
     it('should multiply two numbers', () => {
       curry.multiply(21)(2).should.eql(42)
     })
+
+    it('should divide two numbers', () => {
+      curry.divide(84)(2).should.eql(42)
+    })
 }

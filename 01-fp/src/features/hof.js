@@ -14,9 +14,14 @@ const multiply = (values) => {
   return values.reduce((acc, val) => acc * val)
 }
 
+const divide = (values) => {
+  return values.reduce((acc, val) => acc / val)
+}
+
 export {
   calculate,
   addUp,
   subtract,
-  multiply
+  multiply,
+  divide
 };

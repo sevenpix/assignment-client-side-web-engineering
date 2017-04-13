@@ -20,11 +20,29 @@ export default function() {
       calculator.result.should.eql(42)
     })
 
-    it('should subtract the numbers', () => {
+    it('should multiply the numbers', () => {
       let calculator = monads(7)
       calculator
         .multiply(3)
         .multiply(2)
+      calculator.result.should.eql(42)
+    })
+
+    it('should divide the numbers', () => {
+      let calculator = monads(504)
+      calculator
+        .divide(3)
+        .divide(4)
+      calculator.result.should.eql(42)
+    })
+
+    it('should chain all operations', () => {
+      let calculator = monads(10)
+      calculator
+        .addUp(4)
+        .subtract(7)
+        .multiply(12)
+        .divide(2)
       calculator.result.should.eql(42)
     })
 }

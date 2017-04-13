@@ -12,4 +12,8 @@ export default function() {
     it('should multiply all numbers', () => {
       hof.calculate(hof.multiply,1,21,2).should.eql(42)
     })
+
+    it('should divide the numbers', () => {
+      hof.calculate(hof.divide,84,2).should.eql(42)
+    })
 }

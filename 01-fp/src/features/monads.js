@@ -20,10 +20,17 @@ const calculator = (input) => {
     return this;
   }
 
+  const divide = function (value) {
+    input /= value;
+    this.result = input;
+    return this;
+  }
+
   return {
     addUp,
     subtract,
     multiply,
+    divide,
     result
   }
 }
