@@ -29,7 +29,7 @@ const socket = io(config.SERVER_URL);
 
 $('#joinGameBtn').on('click', () => {
   const gameID = prompt('Please enter a game id:');
-  if (gameID.match(/[a-zA-Z]{8}/)) {
+  if (gameID.match(/[a-zA-Z0-9]{8}/)) {
     $('#gameID').text(gameID);
     socket.emit('join game', {
       game: gameID,
